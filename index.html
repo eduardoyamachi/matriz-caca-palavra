@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz - Caça Palavras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Caça-Palavras | Países</h1>
+
+    <p>1. França</p>
+    <p>2. Brasil</p>
+    <p>3. Rússia</p>
+    <p>4. Holanda</p>
+    <p>5. EUA</p>
+    <p>6. Egito</p>
+    <p>7. Japão</p>
+    <p>8. Polônia</p>
+    <p>9. Indonésia</p>
+    <p>10. México</p>
+
+    <table border="1" class="tabela">
+    <script>
+        x = new Array;
+        x = [
+                [
+                    ['F', 'fundoVermelho'], ['R', 'fundoVermelho'] ,['A', 'fundoVermelho'], ['N', 'fundoVermelho'], ['Ç', 'fundoVermelho'], ['A', 'fundoVermelho'], ['R', 'branco'], ['T', 'branco'], ['Z', 'branco'], ['S', 'branco'], ['B', 'branco'], ['C', 'branco'], ['O', 'branco'], ['P', 'branco']
+                ],
+                [
+                    ['Z', 'branco'], ['D', 'branco'], ['T', 'branco'], ['O', 'branco'], ['P', 'branco'], ['W', 'branco'], ['X', 'branco'], ['E', 'branco'], ['I', 'fundoVermelho'], ['J', 'branco'], ['K', 'branco'], ['M', 'branco'], ['H', 'fundoVermelho'], ['N', 'branco']
+                ],
+                [
+                    ['I', 'branco'], ['B', 'fundoVermelho'], ['H', 'branco'], ['W', 'branco'], ['N', 'branco'], ['U', 'branco'], ['F', 'branco'], ['C', 'branco'], ['N', 'fundoVermelho'], ['A', 'branco'], ['V', 'branco'], ['I', 'branco'], ['O', 'fundoVermelho'], ['J', 'branco']
+                ],
+                [
+                    ['A', 'branco'], ['R', 'fundoVermelho'], ['Ú', 'fundoVermelho'], ['S', 'fundoVermelho'], ['S', 'fundoVermelho'], ['I', 'fundoVermelho'], ['A', 'fundoVermelho'], ['O', 'branco'], ['D', 'fundoVermelho'], ['T', 'branco'], ['X', 'branco'], ['Y', 'branco'], ['L', 'fundoVermelho'], ['H', 'branco']
+                ],
+                [
+                    ['V', 'branco'], ['A', 'fundoVermelho'], ['T', 'branco'], ['I', 'branco'], ['O', 'branco'], ['L', 'branco'], ['P', 'branco'], ['M', 'branco'], ['O', 'fundoVermelho'], ['U', 'branco'], ['S', 'branco'], ['I', 'branco'], ['A', 'fundoVermelho'], ['R', 'branco']
+                ],
+                [
+                    ['V', 'branco'], ['S', 'fundoVermelho'], ['W', 'branco'], ['D', 'branco'], ['U', 'branco'], ['L', 'branco'], ['X', 'branco'], ['Y', 'branco'], ['N', 'fundoVermelho'], ['B', 'branco'], ['O', 'branco'], ['S', 'branco'], ['N', 'fundoVermelho'], ['T', 'branco']
+                ],
+                [
+                    ['R', 'branco'], ['I', 'fundoVermelho'], ['B', 'branco'], ['X', 'branco'], ['W', 'branco'], ['U', 'branco'], ['A', 'fundoVermelho'], ['R', 'branco'], ['E', 'fundoVermelho'], ['E', 'branco'], ['S', 'branco'], ['T', 'branco'], ['D', 'fundoVermelho'], ['P', 'branco']
+                ],
+                [
+                    ['Q', 'branco'], ['L', 'fundoVermelho'], ['A', 'branco'], ['Q', 'branco'], ['F', 'branco'], ['C', 'branco'], ['I', 'fundoVermelho'], ['J', 'branco'], ['S', 'fundoVermelho'], ['L', 'branco'], ['E', 'fundoVermelho'], ['U', 'fundoVermelho'], ['A', 'fundoVermelho'], ['E', 'branco']
+                ],
+                [
+                    ['O', 'branco'], ['Z', 'branco'], ['J', 'branco'], ['T', 'branco'], ['U', 'branco'], ['Q', 'branco'], ['N', 'fundoVermelho'], ['D', 'branco'], ['L', 'fundoVermelho'], ['E', 'branco'], ['G', 'fundoVermelho'], ['K', 'branco'], ['M', 'branco'], ['B', 'branco']
+                ],
+                [
+                    ['Q', 'branco'], ['S', 'branco'], ['M', 'fundoVermelho'], ['N', 'branco'], ['N', 'branco'], ['C', 'branco'], ['Ô', 'fundoVermelho'], ['A', 'branco'], ['A', 'fundoVermelho'], ['K', 'branco'], ['I', 'fundoVermelho'], ['M', 'branco'], ['Y', 'branco'], ['I', 'branco']
+                ],
+                [
+                    ['B', 'branco'], ['E', 'branco'], ['É', 'fundoVermelho'], ['G', 'branco'], ['H', 'branco'], ['C', 'branco'], ['L', 'fundoVermelho'], ['U', 'branco'], ['P', 'branco'], ['D', 'branco'], ['T', 'fundoVermelho'], ['R', 'branco'], ['B', 'branco'], ['P', 'branco']
+                ],
+                [
+                    ['G', 'branco'], ['A', 'branco'], ['X', 'fundoVermelho'], ['F', 'branco'], ['W', 'branco'], ['Q', 'branco'], ['O', 'fundoVermelho'], ['D', 'branco'], ['E', 'branco'], ['V', 'branco'], ['O', 'fundoVermelho'], ['A', 'branco'], ['L', 'branco'], ['U', 'branco']
+                ],
+                [
+                    ['C', 'branco'], ['G', 'branco'], ['I', 'fundoVermelho'], ['R', 'branco'], ['J', 'fundoVermelho'], ['A', 'fundoVermelho'], ['P', 'fundoVermelho'], ['Ã', 'fundoVermelho'], ['O', 'fundoVermelho'], ['C', 'branco'], ['H', 'branco'], ['J', 'branco'], ['W', 'branco'], ['H', 'branco']
+                ],
+                [
+                    ['G', 'branco'], ['O', 'branco'], ['C', 'fundoVermelho'], ['W', 'branco'], ['X', 'branco'], ['Y', 'branco'], ['L', 'branco'], ['G', 'branco'], ['F', 'branco'], ['Z', 'branco'], ['F', 'branco'], ['C', 'branco'], ['J', 'branco'], ['Y', 'branco']
+                ],
+                [
+                    ['P', 'branco'], ['X', 'branco'], ['O', 'fundoVermelho'], ['D', 'branco'], ['X', 'branco'], ['M', 'branco'], ['Y', 'branco'], ['K', 'branco'], ['M', 'branco'], ['H', 'branco'], ['K', 'branco'], ['J', 'branco'], ['O', 'branco'], ['O', 'branco']
+                ],
+                [
+                    ['Z', 'branco'], ['C', 'branco'], ['L', 'branco'], ['I', 'branco'], ['K', 'branco'], ['A', 'branco'], ['Y', 'branco'], ['N', 'branco'], ['D', 'branco'], ['E', 'branco'], ['N', 'branco'], ['V', 'branco'], ['F', 'branco'], ['I', 'branco']
+                ],
+            ];
+
+    
+        for(linha=0;linha<17;linha++){ document.write("<tr>");
+            for(coluna=0;coluna<14;coluna++){
+                document.write("<td class='" + x[linha][coluna][1] + "'>"+ x[linha][coluna][0] + "</td>");
+            }
+
+            document.write("</tr>")
+            
+        }
+        
+    </script>
+
+    </table>
+</body>
+</html>
